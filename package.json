@@ -1,0 +1,29 @@
+{
+  "name": "my-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "moralis:sync": "moralis-admin-cli connect-local-devchain --chain hardhat --moralisSubdomain zfxq4nirdyfs.usemoralis.com --frpcPath ./frpc/frpc.exe",
+    "moralis:cloud": "moralis-admin-cli watch-cloud-folder --moralisSubdomain zfxq4nirdyfs.usemoralis.com --autoSave 1 --moralisCloudfolder ./cloudFunctions"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "moralis": "^2.4.0",
+    "moralis-v1": "^1.11.0",
+    "next": "12.2.5",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-moralis": "^1.4.2",
+    "web3uikit": "^0.1.159"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.8",
+    "dotenv": "^16.0.2",
+    "postcss": "^8.4.16",
+    "tailwindcss": "^3.1.8"
+  }
+}
